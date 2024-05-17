@@ -4,3 +4,8 @@ pandas
 lxml
 statsmodels
 matplotlib
+numpy 
+math
+plotly
+statsmodels
+prophet 
