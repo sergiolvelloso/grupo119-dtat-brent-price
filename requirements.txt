@@ -9,3 +9,4 @@ math
 plotly
 statsmodels
 prophet 
+streamlit
