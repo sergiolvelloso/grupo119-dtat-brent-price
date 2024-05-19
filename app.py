@@ -326,9 +326,7 @@ fig.add_trace(go.Scatter(x=previsao_um_ano['ds'], y=previsao_um_ano['yhat_lower'
 fig.update_layout(
     title='Previsão com Prophet',
     xaxis_title='Data',
-    yaxis_title='Preço',
-    plot_bgcolor='lightgray',
-    paper_bgcolor='lightgray',
+    yaxis_title='Preço'
 )
 
 # Exibindo o gráfico no Streamlit
