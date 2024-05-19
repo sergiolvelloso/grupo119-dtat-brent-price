@@ -346,7 +346,7 @@ def fazer_previsao(periods):
     forecast = modelo.predict(future)
     return forecast
 
-periods = st.number_input( 'Dias a serem previstos', min_value=1, max_value=7, value=7)
+periods = st.number_input( 'Dias a serem previstos', min_value=1, max_value=30, value=7)
 
 
 if st.button('Fazer Previsão'):
