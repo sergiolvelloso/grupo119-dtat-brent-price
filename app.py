@@ -157,7 +157,7 @@ fig.update_layout(
 # Mostra o gráfico no Streamlit
 st.plotly_chart(fig, use_container_width=True)
 
-st.write('### Interpretação:')
+st.write('### Insights Relevantes:')
 st.markdown("""
 :blue-background[**1. Pico em 2008:**] O preço do petróleo apresentava um aumento contínuo desde 2002. Do fim de 2007 até a metade de 2008, a proporção desse aumento de preço aumentou substancialmente, chegando a ultrapassar a barreira de U$140. O aumento escalar da época foi causado por um conjunto de fatores:
 
@@ -223,8 +223,6 @@ fig.add_trace(go.Scatter(x=resultados.resid.index, y=resultados.resid, name='Res
 # Atualizando o layout para fundo cinza
 fig.update_layout(
     height=800, width=800,
-    plot_bgcolor='lightgray',
-    paper_bgcolor='lightgray',
     title_text="Decomposição da Série Temporal",
     autosize = True
 )
@@ -253,7 +251,7 @@ Analisando a decomposição da série temporal, podemos observar que:
 # -------------------------------------------------------------------------------------
 # BLOCO 3: MODELO E PERFORMANCE
 st.markdown('<div class="custom-hr"></div>', unsafe_allow_html=True)
-st.write('# 3. Construindo a predição')
+st.write('# 3. Construindo o Modelo de Predição')
 st.write('## 3.1. Verificando a estacionariedade')
 
 st.markdown("""
@@ -376,11 +374,6 @@ if st.button('Fazer Previsão'):
         yaxis_title='Preço do Petróleo'
     )
     st.plotly_chart(fig, use_container_width=True)
-    # Componentes do modelo para apenas o período previsto
-    fig_trend = px.line(forecast_subset, x='Data', y='trend', title='Trend Component')
-    fig_weekly = px.line(forecast_subset, x='Data', y='weekly', title='Weekly Component')
-    st.plotly_chart(fig_trend, use_container_width=True)
-    st.plotly_chart(fig_weekly, use_container_width=True)
 
 # BLOCO 4: FINALIZAÇÃO
 st.markdown('<div class="custom-hr"></div>', unsafe_allow_html=True)
