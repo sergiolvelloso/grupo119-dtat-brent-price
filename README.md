@@ -8,9 +8,15 @@ Escopo do Projeto
 
 Link da Aplicação
 
-Tecnologias Utilizadas
+Tecnologias e Ferramentas Utilizadas:
+* Python 3.11
+* Streamlit
+* Github
+* Visual Studio Code
+* Git
 
-Bibliotecas Utilizadas
+Bibliotecas Utilizadas:
+As bibliotecas que foram instaladas e utilizadas se encontram aqui
 
 Equipe do Projeto!
 
