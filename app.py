@@ -254,7 +254,7 @@ for key, value in adf_result[4].items():
 st.markdown("""
 Como o valor de p-value está muito alto e o valor do Teste Estatístico é muito maior do que os valores críticos, concluímos que a **série temporal não é estacionária**.
             """)
-
+"teste123"
 
 
 
